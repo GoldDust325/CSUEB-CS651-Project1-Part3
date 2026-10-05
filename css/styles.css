@@ -1,0 +1,170 @@
+/* Our own CSS, loaded AFTER Bootstrap so these rules can customize it. */
+:root {
+  --pv-green: #245b43;
+  --pv-ink: #243c30;
+  --pv-muted: #526356;
+  --pv-cream: #faf8ef;
+  --pv-line: #dce3d8;
+}
+
+body { color: var(--pv-ink); background: var(--pv-cream); }
+a { color: var(--pv-green); }
+.container { max-width: 1120px; }
+.navbar { background: var(--pv-cream); border-bottom: 1px solid var(--pv-line); }
+.navbar-brand { color: var(--pv-ink); font-weight: 750; letter-spacing: -0.5px; }
+/* The supplied logo includes its wordmark; preserve its original proportions. */
+.brand-mark { display: block; width: 180px; height: auto; }
+/* Shared by the HTML and React pages so every navigation link has the same size. */
+.navbar .nav-link {
+  color: var(--pv-muted);
+  font-size: 1.25rem;
+  padding-inline: 14px;
+}
+.navbar .nav-link.active { color: var(--pv-green); font-weight: 700; }
+.navbar .nav-link:hover { color: var(--pv-green); }
+.btn-primary {
+  --bs-btn-bg: var(--pv-green);
+  --bs-btn-border-color: var(--pv-green);
+  --bs-btn-hover-bg: #194431;
+  --bs-btn-hover-border-color: #194431;
+  --bs-btn-active-bg: #194431;
+  --bs-btn-active-border-color: #194431;
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--pv-green);
+  --bs-btn-border-color: var(--pv-green);
+  --bs-btn-hover-bg: var(--pv-green);
+  --bs-btn-hover-border-color: var(--pv-green);
+  --bs-btn-active-bg: #194431;
+  --bs-btn-active-border-color: #194431;
+}
+.btn { border-radius: 8px; padding: 11px 21px; font-weight: 600; }
+.eyebrow { color: var(--pv-green); text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; font-weight: 750; }
+.hero { padding-top: 64px; padding-bottom: 64px; }
+.hero h1 { font-size: clamp(2.7rem, 5.5vw, 4.4rem); line-height: 1.08; letter-spacing: -2px; font-weight: 750; }
+.hero .lead { color: var(--pv-muted); line-height: 1.7; max-width: 440px; }
+.hero-art { width: 100%; max-width: 500px; height: auto; display: block; margin-inline: auto; }
+.section-heading { font-size: 2rem; font-weight: 700; letter-spacing: -0.7px; }
+
+/* Box model example: content + padding + border + margin. */
+.step-card {
+  height: 100%;
+  padding: 28px;
+  border: 1px solid var(--pv-line);
+  border-radius: 14px;
+  margin-bottom: 0;
+  background: #fffef9;
+}
+.step-card h3 { font-size: 1.25rem; font-weight: 700; margin-block: 20px 12px; }
+.step-card p { color: var(--pv-muted); line-height: 1.65; margin-bottom: 0; }
+.step-number { display: inline-grid; place-items: center; width: 36px; height: 36px; background: #eaf0e5; color: var(--pv-green); border-radius: 50%; font-weight: 700; }
+.demo-note { color: var(--pv-muted); font-size: 0.9rem; }
+.page-content { min-height: 65vh; padding-block: 64px; }
+.page-content h1 { font-size: clamp(2.3rem, 4vw, 3.4rem); letter-spacing: -1.2px; font-weight: 750; }
+.starter-note { background: #edf2e8; border: 1px solid #cddbc6; border-radius: 10px; padding: 20px; }
+
+/* About page: readable paragraphs, style labels, and a mission callout. */
+.about-copy { color: var(--pv-muted); font-size: 1.05rem; line-height: 1.85; }
+.about-details { max-width: 860px; }
+.companion-styles li {
+  padding: 10px 22px;
+  border: 1px solid var(--pv-line);
+  border-radius: 30px;
+  background: #edf2e8;
+  color: var(--pv-green);
+  font-weight: 650;
+}
+.about-mission {
+  padding: 28px;
+  border-left: 4px solid var(--pv-green);
+  border-radius: 0 12px 12px 0;
+  background: #edf2e8;
+}
+.about-mission > p:last-child { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 650; line-height: 1.5; }
+
+/* Contact box model: padding inside the border; Bootstrap gutters space the panels. */
+.contact-panel {
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid var(--pv-line);
+  border-radius: 14px;
+  background: #fffef9;
+}
+.contact-panel > p:not(.eyebrow) { color: var(--pv-muted); line-height: 1.7; }
+.contact-panel .form-label { font-weight: 600; }
+.contact-panel .form-control, .contact-panel .form-select {
+  padding: 10px 12px;
+  border-color: var(--pv-line);
+  border-radius: 8px;
+}
+.contact-panel .form-control:focus, .contact-panel .form-select:focus {
+  border-color: var(--pv-green);
+  box-shadow: 0 0 0 3px rgb(36 91 67 / 15%);
+}
+.contact-ideas { padding-left: 20px; margin-block: 20px 24px; color: var(--pv-muted); }
+.contact-ideas li { margin-bottom: 12px; line-height: 1.7; }
+.contact-status { color: var(--pv-green); font-weight: 600; line-height: 1.7; }
+.contact-status:not(:empty) { margin-top: 20px; }
+
+.site-footer { color: var(--pv-muted); border-top: 1px solid var(--pv-line); padding-block: 24px; font-size: 0.85rem; }
+.skip-link { position: absolute; top: -100px; left: 12px; z-index: 1000; padding: 12px; background: white; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid #b86c35; outline-offset: 3px; }
+
+@media (max-width: 767px) {
+  .hero, .page-content { padding-block: 36px; }
+  .hero h1 { letter-spacing: -1px; }
+  .hero-art { max-width: 380px; }
+  .brand-mark { width: 132px; }
+  .navbar .nav-link { padding-block: 12px; }
+}
+
+/* About-only decorations occupy a reserved gutter on the right. */
+.about-page {
+  position: relative;
+  isolation: isolate;
+  --food-scale: 1;
+  padding-right: 252px;
+}
+.about-page > section { position: relative; z-index: 1; }
+.about-foods {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+.about-food {
+  position: absolute;
+  /* Nudge every food slightly right; scale the adjustment down on smaller screens. */
+  right: calc((var(--food-right) - 16px) * var(--food-scale));
+  width: 76px;
+  height: auto;
+  image-rendering: pixelated;
+}
+/* Uneven horizontal offsets, heights, and angles create the scattered arrangement. */
+.food-strawberry { --food-right: 28px; top: 2%; transform: rotate(-16deg); }
+.food-taco { --food-right: 146px; top: 8%; transform: rotate(17deg); }
+.food-steak { --food-right: 66px; top: 16%; transform: rotate(9deg); }
+.food-pizza { --food-right: 156px; top: 23%; transform: rotate(-12deg); }
+.food-grapes { --food-right: 22px; top: 30%; transform: rotate(-8deg); }
+.food-hot-dog { --food-right: 122px; top: 36%; transform: rotate(8deg); }
+.food-chicken { --food-right: 40px; top: 44%; transform: rotate(-18deg); }
+.food-cheeseburger { --food-right: 152px; top: 50%; transform: rotate(12deg); }
+.food-broccoli { --food-right: 20px; top: 59%; transform: rotate(16deg); }
+.food-avocado { --food-right: 132px; top: 64%; transform: rotate(-19deg); }
+.food-sushi { --food-right: 62px; top: 72%; transform: rotate(-12deg); }
+.food-cake { --food-right: 156px; top: 78%; transform: rotate(12deg); }
+.food-matcha { --food-right: 18px; top: 83%; transform: rotate(10deg); }
+.food-pancakes { --food-right: 120px; top: 87%; transform: rotate(-8deg); }
+.food-boba { --food-right: 44px; bottom: 16px; transform: rotate(-10deg); }
+
+/* Smaller screens keep all the foods, with a narrower gutter and smaller artwork. */
+@media (max-width: 991px) {
+  .about-page { --food-scale: 0.4; padding-right: 128px; }
+  .about-food { width: 44px; }
+}
+
+@media (max-width: 575px) {
+  .about-page { --food-scale: 0.18; padding-right: 72px; }
+  .about-food { width: 28px; }
+}

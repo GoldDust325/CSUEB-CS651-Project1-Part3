@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share a question or idea for PlatePal, your companion at the table. Try our classroom prototype's demo contact form.">
+  <link rel="icon" type="image/png" href="./images/PlatePalLogo.png">
+  <title>Contact | PlatePal</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <!-- Bootstrap expands the menu on desktop and collapses it on smaller screens. -->
+  <nav class="navbar navbar-expand-md py-3" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img class="brand-mark" src="./images/PlatePalLogo.png" alt="PlatePal" width="1535" height="1024">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="main-menu">
+        <ul class="navbar-nav ms-auto align-items-md-center"><li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+<li class="nav-item"><a class="nav-link active" href="./contact.html" aria-current="page">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="./app.html">App</a></li>
+<li class="nav-item"><a class="nav-link" href="./signin.html">Sign In</a></li></ul>
+      </div>
+    </div>
+  </nav>
+  <main id="main-content" class="page-content container">
+    <section class="row align-items-center g-4" aria-labelledby="contact-heading">
+      <div class="col-md-7">
+        <p class="eyebrow">Get in touch</p>
+        <h1 id="contact-heading">Let’s talk about food and technology.</h1>
+        <p class="lead mt-4">Looking for job opportunities or maybe you just want to give us some appetizing feedback? We'd love to hear from you.</p>
+      </div>
+      <div class="col-md-5"><img class="hero-art" src="./images/PlatePalLogo.png" alt="PlatePal pixel-art logo" width="1535" height="1024"></div>
+    </section>
+
+    <!-- Bootstrap places these panels side by side on desktop and stacks them on mobile. -->
+    <section class="row g-4 mt-4" aria-labelledby="message-heading">
+      <div class="col-md-7">
+        <div class="contact-panel">
+          <p class="eyebrow mb-2">A little food for thought</p>
+          <h2 class="section-heading mb-4" id="message-heading">Share your idea.</h2>
+          <!-- Skip validation so the form stays a simple classroom interface demo. -->
+          <form id="contact-form" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label class="form-label" for="contact-name">Name</label>
+                <input class="form-control" id="contact-name" name="name" type="text"
+                  autocomplete="name">
+              </div>
+              <div class="col-sm-6">
+                <label class="form-label" for="contact-email">Email</label>
+                <input class="form-control" id="contact-email" name="email" type="email"
+                  autocomplete="email">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea class="form-control" id="contact-message" name="message"
+                  rows="5"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary mt-4" type="submit">Submit message</button>
+            <!-- An initially empty live region announces the JavaScript confirmation. -->
+            <p class="contact-status mb-0" id="contact-status" role="status" aria-atomic="true"></p>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <aside class="contact-panel" aria-labelledby="ideas-heading">
+          <p class="eyebrow">Join the conversation</p>
+          <h2 class="section-heading" id="ideas-heading">What do you have cooking up?</h2>
+          <p>Help us shape the next feature of your table companion by sharing what makes PlatePal so scrumptious. Tell us about:</p>
+          <ul class="contact-ideas">
+            <li>Which features you enjoy and dislike.</li>
+            <li>Do our pals' personalities accurately reflect themselves?</li>
+            <li>What other features you'd like to see in the future.</li>
+          </ul>
+          <a href="./about.html">Get to know PlatePal</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span>PlatePal</span>
+      <span>Your companion at the table.</span>
+    </div>
+  </footer>
+  <script type="module" src="./js/contact.js"></script>
+</body>
+</html>

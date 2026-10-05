@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn why we started PlatePal: your companion at the table, making meal tracking an easier part of everyday life.">
+  <link rel="icon" type="image/png" href="./images/PlatePalLogo.png">
+  <title>About | PlatePal</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <!-- Bootstrap expands the menu on desktop and collapses it on smaller screens. -->
+  <nav class="navbar navbar-expand-md py-3" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img class="brand-mark" src="./images/PlatePalLogo.png" alt="PlatePal" width="1535" height="1024">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="main-menu">
+        <ul class="navbar-nav ms-auto align-items-md-center"><li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link active" href="./about.html" aria-current="page">About</a></li>
+<li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="./app.html">App</a></li>
+<li class="nav-item"><a class="nav-link" href="./signin.html">Sign In</a></li></ul>
+      </div>
+    </div>
+  </nav>
+  <main id="main-content" class="page-content container about-page">
+    <!-- A reserved right gutter keeps decorative food images away from the story. -->
+    <div class="about-foods" aria-hidden="true">
+      <img class="about-food food-strawberry" src="./images/foods/strawberry.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-taco" src="./images/foods/taco.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-steak" src="./images/foods/steak.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-pizza" src="./images/foods/pizza.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-hot-dog" src="./images/foods/hot-dog.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-grapes" src="./images/foods/grapes.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-chicken" src="./images/foods/chicken.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-cheeseburger" src="./images/foods/cheeseburger.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-broccoli" src="./images/foods/broccoli.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-avocado" src="./images/foods/avocado.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-sushi" src="./images/foods/sushi.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-cake" src="./images/foods/cake.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-matcha" src="./images/foods/matcha.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-pancakes" src="./images/foods/pancakes.png" alt="" width="1254" height="1254" decoding="async">
+      <img class="about-food food-boba" src="./images/foods/boba.png" alt="" width="1254" height="1254" decoding="async">
+    </div>
+    <section class="row align-items-center g-4" aria-labelledby="story-heading">
+      <div class="col-12 about-details">
+        <p class="eyebrow">Our story</p>
+        <h1 id="story-heading">Your companion<br>at the table.</h1>
+        <p class="about-copy mt-4 mb-0">Like everyone else, the team at PlatePal was trying to reach our weight and body goals—some of us wanted to build muscle, while others focused on weight loss. But we all encountered the same problem: we were getting fed up with the high cost of calorie tracking apps (upwards of $200/year) and/or the ad-infested &ldquo;free&rdquo; tiers that were unusable. Keeping track of our meals felt harder than it needed to be, so we launched PlatePal: your companion at the table.</p>
+      </div>
+    </section>
+
+    <section class="about-details mt-5" aria-labelledby="companion-heading">
+      <p class="eyebrow">Meet PlatePal</p>
+      <h2 class="section-heading" id="companion-heading">More than a calorie tracker.</h2>
+      <p class="about-copy mt-3">PlatePal is an early-stage AI startup focused on the idea of having a &ldquo;companion&rdquo; that follows and tracks your meals with you. The base plan contains all the essentials with computer vision: identifying foods and their respective calorie counts. But we've also implemented more machine learning technology to bring life to PlatePal, which can now act as your companion by suggesting additions to your plate, updating daily and weekly calorie goals, and tracking other nutritional benchmarks to help you reach your body goals, whatever they may be.</p>
+      <p class="about-copy mb-3">Configure PlatePal's design to match your preferences and personality:</p>
+      <!-- These labels describe the companion styles; selection will be added later. -->
+      <ul class="companion-styles list-unstyled d-flex flex-wrap gap-2 mb-0" aria-label="Companion styles">
+        <li>Casual</li>
+        <li>Strict</li>
+        <li>Athlete</li>
+      </ul>
+    </section>
+
+    <section class="about-mission mt-5" aria-labelledby="mission-heading">
+      <p class="eyebrow mb-2" id="mission-heading">Our mission</p>
+      <p class="mb-0">Our mission is simple: make tracking your meals an easier part of everyday life.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span>PlatePal</span>
+      <span>Your companion at the table.</span>
+    </div>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

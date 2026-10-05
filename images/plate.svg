@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" width="500" height="480">
+  <title>A plate of chicken, rice, and broccoli</title>
+  <rect x="12" y="12" width="476" height="456" rx="38" fill="#edf0e2"/>
+  <circle cx="252" cy="245" r="170" fill="#dce3d1"/>
+  <circle cx="245" cy="235" r="170" fill="#fffef8" stroke="#d4dacc" stroke-width="2"/>
+  <circle cx="245" cy="235" r="139" fill="#f7f5eb" stroke="#e6e4d8" stroke-width="2"/>
+  <g transform="rotate(-18 195 225)">
+    <path d="M132 170c18-24 72-27 102-5 34 24 35 82 3 111-33 30-92 16-105-20-9-25-11-66 0-86Z" fill="#cf914e"/>
+    <path d="M147 165c26-15 68-10 84 10 21 24 21 67-2 86-25 22-69 14-85-12-15-23-10-65 3-84Z" fill="#e3ac66"/>
+    <g stroke="#87522e" stroke-width="7" stroke-linecap="round">
+      <path d="m154 181 67 17M148 207l80 19M156 237l61 14"/>
+    </g>
+  </g>
+  <path d="M270 280c-21-27-5-69 22-87 25-18 65-13 77 16 13 30 1 64-24 78-25 13-60 10-75-7Z" fill="#fffdf2" stroke="#e8dec4" stroke-width="2"/>
+  <g stroke="#dbcfb2" stroke-width="3" stroke-linecap="round">
+    <path d="m285 221 9-5m12 19 8 2m16-27 8 3m-50 36 8 3m31-3 8-4m-26 27 8-2m-21-37 8-5m36 18 7 3m-16 23 8-3"/>
+  </g>
+  <g>
+    <path d="m222 302 6 44m51-38-8 38" stroke="#83a94c" stroke-width="12" stroke-linecap="round"/>
+    <g fill="#447443" stroke="#386039" stroke-width="2">
+      <circle cx="211" cy="302" r="20"/><circle cx="236" cy="309" r="20"/><circle cx="228" cy="288" r="23"/>
+      <circle cx="264" cy="302" r="19"/><circle cx="287" cy="312" r="19"/><circle cx="286" cy="291" r="21"/>
+    </g>
+    <g fill="#669351"><circle cx="218" cy="285" r="7"/><circle cx="278" cy="289" r="6"/><circle cx="206" cy="298" r="5"/></g>
+  </g>
+  <g fill="none" stroke="#245b43" stroke-width="4" stroke-linecap="round">
+    <path d="M79 137v-27h27m289 0h27v27M79 337v27h27m289 0h27v-27"/>
+  </g>
+  <rect x="139" y="398" width="222" height="42" rx="21" fill="#245b43"/>
+  <text x="250" y="424" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#fffef8">Your companion at the table.</text>
+</svg>

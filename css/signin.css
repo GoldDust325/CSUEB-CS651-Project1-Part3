@@ -1,0 +1,17 @@
+/* Sign In shares PlatePal's colors; these rules apply only to its workspace. */
+.signin-workspace .lead { color: var(--pv-muted); line-height: 1.7; }
+.signin-heading { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+
+/* Box model: padding inside the border, with Bootstrap gutters between forms. */
+.signin-panel {
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid var(--pv-line);
+  border-radius: 14px;
+  background: #fffef9;
+}
+.signin-panel .form-label { font-weight: 600; }
+.signin-panel .form-control { padding: 10px 12px; border-color: var(--pv-line); border-radius: 8px; }
+.signin-panel .form-control:focus { border-color: var(--pv-green); box-shadow: 0 0 0 3px rgb(36 91 67 / 15%); }
+.signin-invitation { padding: 28px; border-left: 4px solid var(--pv-green); border-radius: 0 12px 12px 0; background: #edf2e8; }
+.signin-invitation > p:not(.eyebrow) { color: var(--pv-muted); line-height: 1.7; }
+.signin-status { color: var(--pv-green); font-weight: 600; line-height: 1.7; }

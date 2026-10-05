@@ -1,0 +1,63 @@
+/* App-only styles use the shared PlatePal colors and keep other pages unchanged. */
+.workspace-intro { max-width: 740px; }
+.workspace-intro .lead { color: var(--pv-muted); line-height: 1.7; }
+.sample-label {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #cddbc6;
+  border-radius: 30px;
+  background: #edf2e8;
+  color: var(--pv-green);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+/* Box model: content, padding, border, and Bootstrap margins/gutters. */
+.workspace-panel {
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid var(--pv-line);
+  border-radius: 14px;
+  background: #fffef9;
+}
+.workspace-heading { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.meal-file-input { border-color: var(--pv-line); border-radius: 8px; }
+.meal-preview-image {
+  display: grid;
+  place-items: center;
+  height: 300px;
+  padding: 16px;
+  border: 1px solid var(--pv-line);
+  border-radius: 12px;
+  background: #edf0e2;
+}
+.meal-preview-image img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+/* Keep the pixel illustration crisp without changing uploaded photos. */
+.meal-preview-image .pixel-plate-preview { image-rendering: pixelated; }
+.meal-preview figcaption { overflow-wrap: anywhere; }
+.companion-option { width: 100%; height: 100%; padding: 12px 8px; }
+.companion-option span, .companion-option small { display: block; }
+.companion-option small { margin-top: 4px; font-size: 0.75rem; font-weight: 400; }
+.sample-total {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--pv-line);
+  border-radius: 12px;
+  background: #faf8ef;
+}
+.sample-total strong { color: var(--pv-green); font-size: 2.25rem; }
+.sample-total small { font-size: 0.9rem; font-weight: 500; }
+.food-result { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 16px; border-bottom: 1px solid var(--pv-line); }
+.food-result h3, .sample-suggestion h3 { font-size: 1rem; font-weight: 650; margin-bottom: 6px; }
+.food-result p { color: var(--pv-muted); font-size: 0.85rem; margin-bottom: 0; }
+.food-result > span { white-space: nowrap; font-weight: 600; font-size: 0.9rem; }
+.sample-suggestion { padding: 20px; border-left: 4px solid var(--pv-green); border-radius: 0 10px 10px 0; background: #edf2e8; }
+.sample-suggestion p, .results-empty { color: var(--pv-muted); line-height: 1.7; }
+.results-empty { padding: 24px; border: 1px dashed #cddbc6; border-radius: 12px; background: #faf8ef; }
+
+@media (max-width: 575px) {
+  .meal-preview-image { height: 250px; }
+}
